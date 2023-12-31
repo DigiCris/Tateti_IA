@@ -1,0 +1,90 @@
+.page{
+    height: 500px;
+    width: 100%;
+    background-color: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.container {
+    display: flex;
+    width: 110px;
+    height: 110px;
+    flex-wrap: wrap;
+    gap: 5px;
+    background-color: gray;
+    justify-content: center;
+    align-content: center;
+}
+
+body{
+    background-color: lightgrey;
+}
+.item {
+    height: 30px;
+    width: 30px;
+    background-color: beige;
+    cursor: pointer;
+    color: red;
+    font-size: 20px;
+    font-weight: 900;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.item:hover{
+    background-color: aquamarine;
+}
+
+.line-vertical{
+    z-index: 1;
+    height: 105px;
+    width: 2px;
+    background-color: blue;
+    position: absolute;
+    /*transform: rotate(-45deg);
+    left: 50%;
+    transform: rotate(-45deg);
+    align-self: flex-end;*/
+}
+
+
+.line-horizontal{
+    z-index: 1;
+    width: 105px;
+    height: 2px;
+    background-color: blue;
+    position: absolute;
+    left: 0px;
+    align-self: center;
+}
+
+.line-cross1{
+    z-index: 1;
+    height: 150px;
+    width: 2px;
+    background-color: blue;
+    position: absolute;
+    left: 50px;
+    top: -25px;
+    transform: rotate(-45deg);
+}
+
+.line-cross2{
+    z-index: 1;
+    height: 150px;
+    width: 2px;
+    background-color: blue;
+    position: absolute;
+    left: -20px;
+    top: -25px;
+    transform: rotate(45deg);
+}
+
+h1{
+    float: left;
+}
